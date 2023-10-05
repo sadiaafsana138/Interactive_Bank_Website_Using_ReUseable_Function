@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <!--Tailwind connection-->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-12">
+        <h1 class="text-5xl font-semibold text-center">Let's Get Some
+            <span class="text-violet-800">MONEY!!!</span>
+        </h1>
+    </header>
+    <main class="mt-24">
+        <section class="mt-12 text-white">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-500 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold">Diposit</h4>
+                    <h2 class="text-4xl font-semibold">$<span id="Diposit-Current-Amount">00</span></h2>
+                </div>
+                <div class="bg-pink-500 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold">Withdraw</h4>
+                    <h2 class="text-4xl font-semibold">$<span id="Withdraw-Current-Amount">00</span></h2>
+                </div>
+                <div class="bg-orange-500 p-8 rounded-xl">
+                    <h4 class="text-2xl font-semibold">Balance</h4>
+                    <h2 class="text-4xl font-semibold">$<span id="Balance-Current-Amount">750</span></h2>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-12 ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-700 p-8 rounded-xl">
+                    <h4 class="text-4xl font-semibold text-center mb-4 text-white">Diposit Here</h4>
+                    <div class="items-center">
+                        <input class="w-9/12 block mb-4 mx-auto px-3 py-2" type="number" name="" id="New-Diposit-Amount"
+                            placeholder="$ Amount you want to deposit">
+                        <div class="flex items-center">
+                            <button id="btn-diposit" class="bg-fuchsia-300 hover:bg-fuchsia-900 px-8 py-3 text-white font-medium rounded-md mx-auto">
+                                Diposit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-indigo-700 p-8 rounded-xl">
+                    <h4 class="text-4xl font-semibold text-center mb-4 text-white">Withdraw Here</h4>
+                    <div class="items-center">
+                        <input class="w-9/12 block mb-4 mx-auto px-3 py-2" type="number" name="" id="New-Withdraw-Amount"
+                            placeholder="$ Amount you want to Withdraw">
+                        <div class="flex items-center">
+                            <button id="btn-withdraw" class="bg-indigo-300 hover:bg-indigo-900 px-8 py-3 text-white font-medium rounded-md mx-auto">
+                                Withdraw
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex items-center">
+            <button id="btn-logout" class="bg-red-400 hover:bg-red-800 px-12 py-5 text-white font-medium rounded-md mx-auto mt-12">
+             LogOut
+            </button>
+          </div>
+    </footer>
+    <script src="calculation.js"></script>
+    <script src="Functions.js"></script>
+</body>
+
+</html>
